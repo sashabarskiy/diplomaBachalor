@@ -97,13 +97,13 @@ function draw(){
 
 /*
 	ctx.fillStyle = "red";
-	for(let i = 0; i < ways.length; i++)
-		for(let j = 0; j < ways[i].length; j++){
+	for(let i = 0; i < copters[0].ways.length; i++)
+		for(let j = 0; j < copters[0].ways[i].length; j++){
 			ctx.beginPath();
 			ctx.arc(j * ceilSize,i * ceilSize,1,0,Math.PI*2,true);
 			ctx.fill();
 			ctx.closePath();
-			if(!ways[i][j]){
+			if(!copters[0].ways[i][j]){
 				line(j * ceilSize,i * ceilSize,(j+1)*ceilSize,(i+1)*ceilSize)
 				line((j+1) * ceilSize,i * ceilSize,j*ceilSize,(i+1)*ceilSize)
 				}
